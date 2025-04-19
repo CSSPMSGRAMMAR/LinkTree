@@ -642,3 +642,108 @@ body {
     0% { background-position: 200% 0; }
     100% { background-position: -200% 0; }
 }
+
+
+/* Mega Announcement Button */
+.mega-announcement {
+    max-width: 800px;
+    width: 90%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.mega-btn {
+    display: block;
+    background: linear-gradient(135deg, #ff6b6b, #ff8e8e, #ff6b6b);
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 12px;
+    border: none;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.mega-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 107, 107, 0.6);
+}
+
+.mega-btn:active {
+    transform: translateY(1px);
+}
+
+.mega-text {
+    display: block;
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+}
+
+.mega-subtext {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 12px;
+    font-weight: normal;
+}
+
+.mega-cta {
+    display: inline-block;
+    background-color: white;
+    color: #ff6b6b;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.mega-btn:hover .mega-cta {
+    background-color: #f8f9fa;
+    transform: scale(1.05);
+}
+
+.mega-notice {
+    margin-top: 10px;
+    font-style: italic;
+    color: var(--accentColor);
+    font-size: 0.9rem;
+}
+
+/* Animation for Mega Button */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
+
+.mega-btn {
+    animation: pulse 2s infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .mega-text {
+        font-size: 1.2rem;
+    }
+    .mega-subtext {
+        font-size: 0.9rem;
+    }
+    .mega-btn {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mega-text {
+        font-size: 1.1rem;
+    }
+    .mega-subtext {
+        font-size: 0.85rem;
+    }
+    .mega-cta {
+        padding: 6px 15px;
+        font-size: 0.9rem;
+    }
+}
