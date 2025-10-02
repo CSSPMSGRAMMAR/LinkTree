@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSSPMS.GRAMMAR | Your Gateway to CSS Success</title>
@@ -12,501 +12,369 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <!-- Swiper CSS for Carousel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-  </head>
+</head>
 <body>
-    <!-- Animated Background -->
-    <div class="animated-background">
-        <div class="gradient-overlay"></div>
-        <div class="floating-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
-            <div class="shape shape-4"></div>
+    <!-- Blurred Background with Aspirant Images -->
+    <div class="background-container">
+        <div class="background-image"></div>
+        <div class="background-overlay"></div>
+    </div>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+        <i class="fas fa-moon theme-icon" id="moonIcon"></i>
+        <i class="fas fa-sun theme-icon hidden" id="sunIcon"></i>
+    </button>
+
+    <!-- Full-Screen Physics Playground -->
+    <div class="physics-playground" id="physicsPlayground">
+        <!-- Social icons will be dynamically created here -->
+    </div>
+
+    <!-- Mystery Instructions Modal -->
+    <div class="mystery-modal" id="mysteryModal">
+        <div class="mystery-modal-content">
+            <div class="mystery-header">
+                <h3 class="mystery-title">🔮 Secret Discovery!</h3>
+                <button class="mystery-close" id="mysteryCloseBtn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="mystery-body">
+                <p class="mystery-subtitle">You've unlocked the physics playground secrets!</p>
+                <div class="mystery-instructions">
+                    <div class="mystery-item">
+                        <span class="mystery-icon">👆</span>
+                        <div class="mystery-text">
+                            <strong>Tap</strong> = Open Link
+                            <small>Quick tap opens the social media page</small>
+                        </div>
+                    </div>
+                    <div class="mystery-item">
+                        <span class="mystery-icon">🎯</span>
+                        <div class="mystery-text">
+                            <strong>Drag & Throw</strong> = Physics Fun!
+                            <small>Hold and throw for realistic physics simulation</small>
+                        </div>
+                    </div>
+                    <div class="mystery-item">
+                        <span class="mystery-icon">🔄</span>
+                        <div class="mystery-text">
+                            <strong>Double-Tap</strong> = Reset All
+                            <small>Returns all icons to their starting positions</small>
+                        </div>
+                    </div>
+                    <div class="mystery-item">
+                        <span class="mystery-icon">💥</span>
+                        <div class="mystery-text">
+                            <strong>Collision Physics</strong> = Epic Bounces!
+                            <small>Icons bounce off walls and each other realistically</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="mystery-footer">
+                    <p class="mystery-tip">💡 Pro Tip: Try throwing icons at each other for chain reactions!</p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- Sticky Header for Quick Access -->
-    <header class="sticky-header">
-        <div class="container">
-            <div class="sticky-content">
-                <div class="sticky-logo">
-                    <img src="Images/AcademyLogo.PNG" alt="CSSPMS.GRAMMAR Logo" class="logo-img">
-                    <span class="logo-text">CSSPMS.GRAMMAR</span>
-                </div>
-                <nav class="sticky-nav">
-                    <a href="#hero" class="nav-link">Home</a>
-                    <a href="#social-section" class="nav-link">Connect</a>
-                    <a href="#groups-section" class="nav-link">Groups</a>
-                    <a href="#about-section" class="nav-link">About</a>
-                </nav>
+    <!-- Main Linktree Container -->
+    <div class="linktree-container">
+        <!-- Profile Section -->
+        <div class="profile-section">
+            <div class="profile-image">
+                <img src="Images/AcademyLogo.PNG" alt="CSSPMS.GRAMMAR Logo">
+            </div>
+            <div class="profile-info">
+                <h1 class="profile-name">
+                    CSSPMS.GRAMMAR
+                    <img src="Images/verified-badge.png" alt="Verified" class="verified-badge">
+                </h1>
+                <p class="profile-tagline">علم بڑی طاقت ہے</p>
+                <p class="profile-description">Knowledge is Power</p>
             </div>
         </div>
-    </header>
 
-    <!-- Main Container -->
-    <div class="container">
-        <!-- Hero Section -->
-        <section id="hero" class="hero">
-            <div class="hero-content">
-                <div class="logo-section">
-                    <div class="logo">
-                        <div class="logo-icon">
-                            <img src="Images/AcademyLogo.PNG" alt="CSSPMS.GRAMMAR Logo" class="hero-logo-img">
-                        </div>
-                        <div class="logo-text">
-                            <h1>CSSPMS.GRAMMAR</h1>
-                            <p class="tagline">علم بڑی طاقت ہے</p>
-                            <p class="tagline-en">Knowledge is Power</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <div class="stat-number">10,000+</div>
-                        <div class="stat-label">Success Stories</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">100%</div>
-                        <div class="stat-label">Free Resources</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">24/7</div>
-                        <div class="stat-label">Free Mentorship</div>
-                    </div>
-                </div>
-                
-                <div class="hero-description">
-                    <p>Your comprehensive gateway to CSS exam success. Access premium study materials, expert mentorship, and join a thriving community of aspirants.</p>
-                </div>
-
-                <!-- Motivational Quote Section -->
-                <div class="quote-section">
-                    <div class="quote-container">
-                        <i class="fas fa-quote-left quote-icon"></i>
-                        <p class="quote-text" id="motivationalQuote">Loading inspiration...</p>
-                        <i class="fas fa-quote-right quote-icon"></i>
+        <!-- Swipeable Carousel for Quotes -->
+        <div class="swiper quote-carousel">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="quote-card">
+                        <i class="fas fa-quote-left"></i>
+                        <p id="motivationalQuote">Keep going! CSS and PMS are just stepping stones to your greatness.</p>
                     </div>
                 </div>
             </div>
-    </section>
+            <div class="swiper-pagination"></div>
+        </div>
 
-        <!-- Connect With Us Section - Moved to top -->
-        <section id="social-section" class="social-section">
-            <div class="section-header">
-                <h2>Connect With Us</h2>
-                <p>Join our community and stay updated with the latest resources</p>
+        <!-- Main Links Section -->
+        <div class="links-container">
+            <a href="#" class="link-item" data-section="social">
+                <i class="fas fa-rocket"></i>
+                <span>Join Our Community</span>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+            
+            <a href="#" class="link-item" data-section="groups">
+                <i class="fas fa-users-line"></i>
+                <span>Study Groups</span>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+            
+            <a href="#" class="link-item" data-section="features">
+                <i class="fas fa-trophy"></i>
+                <span>Our Secret Sauce</span>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+            
+            <a href="#" class="link-item" data-section="resources">
+                <i class="fas fa-gift"></i>
+                <span>Free Goodies</span>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+
+
+        <!-- Footer Text -->
+        <div class="footer-text">
+            <p>&copy; 2024 CSSPMS.GRAMMAR</p>
+        </div>
     </div>
 
-            <div class="social-grid">
-                <a href="https://whatsapp.com/channel/0029Va81q0TLtOj8Und0ua0l" target="_blank" rel="noopener noreferrer" class="social-card whatsapp">
-                    <div class="card-image">
-                        <img src="Images/whatsapp Channel.jpg" alt="WhatsApp Channel" loading="lazy">
+    <!-- Modal/Overlay Sections -->
+    
+    <!-- Social Media Section Modal -->
+    <div class="section-modal" id="social-modal">
+        <div class="modal-content">
+            <button class="close-modal"><i class="fas fa-times"></i></button>
+            <h2>Connect With Us</h2>
+            <div class="modal-grid">
+                <a href="https://whatsapp.com/channel/0029Va81q0TLtOj8Und0ua0l" target="_blank" rel="noopener noreferrer" class="modal-card">
+                    <div class="modal-card-icon whatsapp-bg">
+                        <i class="fab fa-whatsapp"></i>
                     </div>
-                    <div class="card-content">
-                        <div class="card-icon">
-                            <i class="fab fa-whatsapp"></i>
-                        </div>
-                        <h3>WhatsApp Channel</h3>
-                        <p>Get daily updates, study materials, and announcements</p>
-                        <span class="card-cta">Join Channel <i class="fas fa-arrow-right"></i></span>
-                    </div>
+                    <h3>WhatsApp Channel</h3>
+                    <p>Daily updates & study materials</p>
                 </a>
                 
-                <a href="https://www.instagram.com/csspms.grammar" target="_blank" rel="noopener noreferrer" class="social-card instagram">
-                    <div class="card-image">
-                        <img src="Images/Instagram.jpg" alt="Instagram Profile" loading="lazy">
+                <a href="https://www.instagram.com/csspms.grammar" target="_blank" rel="noopener noreferrer" class="modal-card">
+                    <div class="modal-card-icon instagram-bg">
+                        <i class="fab fa-instagram"></i>
                     </div>
-                    <div class="card-content">
-                        <div class="card-icon">
-                            <i class="fab fa-instagram"></i>
-                        </div>
-                        <h3>Instagram</h3>
-                        <p>Visual study tips, motivation, and community highlights</p>
-                        <span class="card-cta">Follow Us <i class="fas fa-arrow-right"></i></span>
-                    </div>
+                    <h3>Instagram</h3>
+                    <p>Visual tips & motivation</p>
                 </a>
                 
-                <a href="https://www.instagram.com/channel/AbbiG2WKNSpJDJuy/" target="_blank" rel="noopener noreferrer" class="social-card instagram-broadcast">
-                    <div class="card-image">
-                        <img src="Images/Instagram Broadcast.jpg" alt="Instagram Broadcast" loading="lazy">
+                <a href="https://www.instagram.com/channel/AbbiG2WKNSpJDJuy/" target="_blank" rel="noopener noreferrer" class="modal-card">
+                    <div class="modal-card-icon broadcast-bg">
+                        <i class="fas fa-broadcast-tower"></i>
                     </div>
-                    <div class="card-content">
-                        <div class="card-icon">
-                            <i class="fas fa-broadcast-tower"></i>
-                        </div>
-                        <h3>Instagram Broadcast</h3>
-                        <p>Exclusive content and live updates for our community</p>
-                        <span class="card-cta">Join Broadcast <i class="fas fa-arrow-right"></i></span>
-                    </div>
+                    <h3>Instagram Broadcast</h3>
+                    <p>Exclusive live updates</p>
                 </a>
                 
-                <a href="https://www.facebook.com/csspmsgrammar" target="_blank" rel="noopener noreferrer" class="social-card facebook">
-                    <div class="card-image">
-                        <img src="Images/Facebook.png" alt="Facebook Profile" loading="lazy">
+                <a href="https://www.facebook.com/csspmsgrammar" target="_blank" rel="noopener noreferrer" class="modal-card">
+                    <div class="modal-card-icon facebook-bg">
+                        <i class="fab fa-facebook-f"></i>
                     </div>
-                    <div class="card-content">
-                        <div class="card-icon">
-                            <i class="fab fa-facebook"></i>
-                        </div>
-                        <h3>Facebook</h3>
-                        <p>Connect with fellow aspirants and share experiences</p>
-                        <span class="card-cta">Like Page <i class="fas fa-arrow-right"></i></span>
-                    </div>
+                    <h3>Facebook</h3>
+                    <p>Connect with aspirants</p>
                 </a>
             </div>
-    </section>
-
-        <!-- About Section -->
-        <section id="about-section" class="about-section">
-            <div class="section-header">
-                <h2>Why Choose CSSPMS.GRAMMAR?</h2>
-                <p>We provide everything you need to excel in your CSS journey</p>
-            </div>
-            
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-book-open"></i>
-                    </div>
-                    <h3>Daily Study Materials</h3>
-                    <p>Comprehensive CSS study materials and video lectures updated daily</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>Interactive Quizzes</h3>
-                    <p>Regular knowledge-check quizzes with detailed explanations</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3>Personal Mentorship</h3>
-                    <p>One-on-one mentorship sessions with experienced instructors</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-newspaper"></i>
-                    </div>
-                    <h3>Current Affairs</h3>
-                    <p>Daily national & international news updates and analysis</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-video"></i>
-                    </div>
-                    <h3>Expert Lectures</h3>
-                    <p>Recorded lectures from top academy instructors</p>
-      </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-link"></i>
-                    </div>
-                    <h3>Resource Library</h3>
-                    <p>Curated drive links for all essential study materials</p>
-                </div>
-            </div>
-    </section>
-
-        <!-- WhatsApp Groups Section -->
-        <section id="groups-section" class="groups-section">
-            <div class="section-header">
-                <h2>Join Our Study Groups</h2>
-                <p>Connect with peers and get support in your CSS preparation journey</p>
+        </div>
     </div>
 
-            <div class="groups-grid">
-                <a href="https://chat.whatsapp.com/DPfEJkMa7d93ft4eiGKuJ5" target="_blank" rel="noopener noreferrer" class="group-card">
-                    <div class="group-icon">
-                        <i class="fab fa-whatsapp"></i>
+    <!-- Study Groups Section Modal -->
+    <div class="section-modal" id="groups-modal">
+        <div class="modal-content">
+            <button class="close-modal"><i class="fas fa-times"></i></button>
+            <h2>Join Our Study Groups</h2>
+            <p class="modal-subtitle">Connect with peers and boost your preparation</p>
+            <div class="groups-list">
+                <a href="https://chat.whatsapp.com/DPfEJkMa7d93ft4eiGKuJ5" target="_blank" class="group-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <h4>Group 1</h4>
+                        <p>CSS preparation journey</p>
                     </div>
-                    <h3>Group 1</h3>
-                    <p>Join to boost your CSS preparation journey</p>
                 </a>
-                
-                <a href="https://chat.whatsapp.com/IEGDKt0Rfo4AqYfJhQB8Gr" target="_blank" rel="noopener noreferrer" class="group-card">
-                    <div class="group-icon">
-                        <i class="fab fa-whatsapp"></i>
+                <a href="https://chat.whatsapp.com/IEGDKt0Rfo4AqYfJhQB8Gr" target="_blank" class="group-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <h4>Group 2</h4>
+                        <p>Motivation & support</p>
                     </div>
-                    <h3>Group 2</h3>
-                    <p>Connect with fellow aspirants for motivation</p>
                 </a>
-                
-                <a href="https://chat.whatsapp.com/CuU9foc6jko8RJXdGGj9Uy" target="_blank" rel="noopener noreferrer" class="group-card">
-                    <div class="group-icon">
-                        <i class="fab fa-whatsapp"></i>
+                <a href="https://chat.whatsapp.com/CuU9foc6jko8RJXdGGj9Uy" target="_blank" class="group-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <h4>Group 3</h4>
+                        <p>Current affairs updates</p>
                     </div>
-                    <h3>Group 3</h3>
-                    <p>Stay updated with current affairs</p>
                 </a>
-                
-                <a href="https://chat.whatsapp.com/KiZAORIELSY3THKijQBWTV" target="_blank" rel="noopener noreferrer" class="group-card">
-                    <div class="group-icon">
-                        <i class="fab fa-whatsapp"></i>
+                <a href="https://chat.whatsapp.com/KiZAORIELSY3THKijQBWTV" target="_blank" class="group-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <h4>Group 4</h4>
+                        <p>Essay writing skills</p>
                     </div>
-                    <h3>Group 4</h3>
-                    <p>Master essay writing skills together</p>
                 </a>
-                
-                <a href="https://chat.whatsapp.com/BvKWbI09YVH2YuPA02cxaU" target="_blank" rel="noopener noreferrer" class="group-card">
-                    <div class="group-icon">
-                        <i class="fab fa-whatsapp"></i>
+                <a href="https://chat.whatsapp.com/BvKWbI09YVH2YuPA02cxaU" target="_blank" class="group-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <h4>Group 5</h4>
+                        <p>English grammar mastery</p>
                     </div>
-                    <h3>Group 5</h3>
-                    <p>Improve your English grammar skills</p>
                 </a>
-                
-                <a href="https://chat.whatsapp.com/Is2XmVk5NQuHz1Xmt3FUHx" target="_blank" rel="noopener noreferrer" class="group-card">
-                    <div class="group-icon">
-                        <i class="fab fa-whatsapp"></i>
+                <a href="https://chat.whatsapp.com/Is2XmVk5NQuHz1Xmt3FUHx" target="_blank" class="group-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <h4>Group 6</h4>
+                        <p>Mathematics & statistics</p>
                     </div>
-                    <h3>Group 6</h3>
-                    <p>Conquer mathematics and statistics</p>
                 </a>
-                
-                <a href="https://chat.whatsapp.com/FIHdTjCZR5qCJssXvihoGE" target="_blank" rel="noopener noreferrer" class="group-card">
-                    <div class="group-icon">
-                        <i class="fab fa-whatsapp"></i>
+                <a href="https://chat.whatsapp.com/FIHdTjCZR5qCJssXvihoGE" target="_blank" class="group-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <h4>Group 7</h4>
+                        <p>Islamic & Pakistan studies</p>
                     </div>
-                    <h3>Group 7</h3>
-                    <p>Explore Islamic studies and Pakistan affairs</p>
                 </a>
-                
-                <a href="https://chat.whatsapp.com/HIGHLDgNmKn9V4qZHBkG9l" target="_blank" rel="noopener noreferrer" class="group-card">
-                    <div class="group-icon">
-                        <i class="fab fa-whatsapp"></i>
+                <a href="https://chat.whatsapp.com/HIGHLDgNmKn9V4qZHBkG9l" target="_blank" class="group-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <h4>Group 8</h4>
+                        <p>Geography & environment</p>
                     </div>
-                    <h3>Group 8</h3>
-                    <p>Discover geography and environmental studies</p>
                 </a>
-                
-                <a href="https://chat.whatsapp.com/KiZAORIELSY3THKijQBWTV" target="_blank" rel="noopener noreferrer" class="group-card">
-                    <div class="group-icon">
-                        <i class="fab fa-whatsapp"></i>
+                <a href="https://chat.whatsapp.com/KiZAORIELSY3THKijQBWTV" target="_blank" class="group-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <h4>Group 9</h4>
+                        <p>International relations</p>
                     </div>
-                    <h3>Group 9</h3>
-                    <p>Learn international relations and diplomacy</p>
                 </a>
-                
-                <a href="https://chat.whatsapp.com/EUCFLq4jaJ846kEu2bohwd" target="_blank" rel="noopener noreferrer" class="group-card">
-                    <div class="group-icon">
-                        <i class="fab fa-whatsapp"></i>
+                <a href="https://chat.whatsapp.com/EUCFLq4jaJ846kEu2bohwd" target="_blank" class="group-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <h4>Group 10</h4>
+                        <p>Economics & administration</p>
                     </div>
-                    <h3>Group 10</h3>
-                    <p>Master economics and public administration</p>
                 </a>
             </div>
-            
             <div class="groups-notice">
-                <p><i class="fas fa-info-circle"></i> Please join only one group as all groups share the same content and resources.</p>
+                <i class="fas fa-info-circle"></i>
+                <p>Join only one group - all share the same content</p>
             </div>
-        </section>
-
-        <!-- Call to Action Section -->
-        <section class="cta-section">
-            <div class="cta-content">
-                <h2>Ready to Start Your CSS Journey?</h2>
-                <p>Join thousands of successful aspirants who have transformed their careers with our comprehensive support system.</p>
-                <div class="cta-buttons">
-                    <a href="https://whatsapp.com/channel/0029Va81q0TLtOj8Und0ua0l" target="_blank" rel="noopener noreferrer" class="cta-btn primary">
-                        <i class="fab fa-whatsapp"></i>
-                        Join WhatsApp Channel
-                    </a>
-                    <a href="#social-section" class="cta-btn secondary">
-                        <i class="fas fa-users"></i>
-                        Explore All Resources
-        </a>
-      </div>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="footer-logo">
-                        <img src="Images/AcademyLogo.PNG" alt="CSSPMS.GRAMMAR Logo" class="footer-logo-img">
-                        <span>CSSPMS.GRAMMAR</span>
-                    </div>
-                    <p>Empowering CSS aspirants with knowledge, resources, and community support.</p>
-                </div>
-                
-                <div class="footer-links">
-                    <div class="footer-section">
-                        <h4>Quick Links</h4>
-                        <ul>
-                            <li><a href="#about-section">About Us</a></li>
-                            <li><a href="#social-section">Resources</a></li>
-                            <li><a href="#groups-section">Study Groups</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="footer-section">
-                        <h4>Connect</h4>
-                        <ul>
-                            <li><a href="https://whatsapp.com/channel/0029Va81q0TLtOj8Und0ua0l" target="_blank">WhatsApp Channel</a></li>
-                            <li><a href="https://www.instagram.com/csspms.grammar" target="_blank">Instagram</a></li>
-                            <li><a href="https://www.facebook.com/csspmsgrammar" target="_blank">Facebook</a></li>
-                        </ul>
-                    </div>
-                </div>
+        </div>
     </div>
 
-            <div class="footer-bottom">
-                <p>&copy; 2024 CSSPMS.GRAMMAR. All rights reserved. | <span class="motto">"Knowledge is Power"</span></p>
+    <!-- Features Section Modal -->
+    <div class="section-modal" id="features-modal">
+        <div class="modal-content">
+            <button class="close-modal"><i class="fas fa-times"></i></button>
+            <h2>Why Choose Us?</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-book-open"></i>
+                    <h4>Daily Study Materials</h4>
+                    <p>Comprehensive CSS materials updated daily</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-brain"></i>
+                    <h4>Interactive Quizzes</h4>
+                    <p>Regular quizzes with explanations</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-users"></i>
+                    <h4>Personal Mentorship</h4>
+                    <p>One-on-one sessions with experts</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-newspaper"></i>
+                    <h4>Current Affairs</h4>
+                    <p>Daily news & analysis</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-video"></i>
+                    <h4>Expert Lectures</h4>
+                    <p>Recorded lectures from top instructors</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-link"></i>
+                    <h4>Resource Library</h4>
+                    <p>Curated study materials</p>
+                </div>
             </div>
-        </footer>
+        </div>
     </div>
 
-    <!-- JavaScript -->
-    <script>
-        // Motivational Quotes API
-      const quotes = [
-    "Keep going! CSS and PMS are just stepping stones to your greatness.",
-    "Every page you read today brings you closer to acing your exams tomorrow.",
-    "Master English first, then the rest will be a piece of cake for you.",
-    "Your struggle today is your strength tomorrow. Keep pushing!",
-    "Ace this exam like the champion you are meant to be.",
-    "Struggle, struggle, struggle – success is coming for you!",
-    "Don't just study, conquer the syllabus with confidence.",
-    "Every hour you invest today is a medal waiting for you tomorrow.",
-    "Believe in yourself – CSS and PMS are no match for your determination.",
-    "Hard work beats talent when talent doesn’t work hard – now is your time!",
-    "Keep grinding, keep learning, keep growing – the exams will bow to you.",
-    "Focus today, shine tomorrow – you will ace it!",
-    "Motivation is temporary, discipline lasts forever. Keep going!",
-    "Every question you solve is a step closer to victory.",
-    "Turn every ‘I can’t’ into ‘I just did!’",
-    "Consistency is your secret weapon for these exams.",
-    "Dream big, study hard, stay unstoppable!",
-    "No shortcuts, no excuses – only results.",
-    "Your future self will thank you for the effort you put in today.",
-    "Push your limits – greatness waits beyond comfort zones.",
-    "CSS and PMS are tough, but so are you!",
-    "Every challenge you face is an opportunity to grow stronger.",
-    "Remember: small progress is still progress. Keep moving!",
-    "Your focus today determines your success tomorrow.",
-    "Mistakes are proof that you are trying – keep going!",
-    "Keep your eyes on the prize – you’re almost there!",
-    "Turn your hard work into results – and results into celebrations!",
-    "You’re not just studying for exams, you’re building your empire.",
-    "Stay hungry, stay motivated, stay unstoppable!",
-    "Conquer your fears, conquer the syllabus, conquer the exam!",
-    "Don’t count hours, make hours count – every minute matters.",
-    "Your dedication will outshine the toughest questions.",
-    "Wake up, study, repeat – excellence is in the routine.",
-    "No fear, no stress – just focus and success.",
-    "You’ve got this! Keep pushing and never give up.",
-    "Hard work today, triumph tomorrow – CSS and PMS won’t know what hit them.",
-    "Turn struggle into strength, and strength into victory.",
-    "Your exam is just another mountain – climb it fearlessly.",
-    "Believe, prepare, succeed – that’s the formula!",
-    "Every revision is a step closer to a 100% score.",
-    "Stay positive, study smart, and conquer the exams.",
-    "Your brain is a weapon – arm it with knowledge!",
-    "Discipline, dedication, determination – your secret trio.",
-    "The harder the exam, the sweeter the success.",
-    "Push past the doubts – greatness is waiting for you.",
-    "Keep calm, keep studying, keep winning.",
-    "Every effort counts – even the smallest one leads to victory.",
-    "Don’t just aim to pass, aim to excel!",
-    "Your mindset today shapes your success tomorrow.",
-    "Stay strong, stay focused, stay motivated – CSS and PMS are yours!",
-    "Make your struggle your story of triumph.",
-    "One more chapter, one more topic, one step closer to success.",
-    "Motivation is your fuel, consistency is your engine.",
-    "Remember: champions are made in the books they read today."
-];
+    <!-- Resources Section Modal -->
+    <div class="section-modal" id="resources-modal">
+        <div class="modal-content">
+            <button class="close-modal"><i class="fas fa-times"></i></button>
+            <h2>Free Resources</h2>
+            <p class="modal-subtitle">✨ Updated Weekly | Join WhatsApp Groups for Latest Materials</p>
+            <div class="resources-list">
+                <div class="resource-item">
+                    <i class="fas fa-trophy"></i>
+                    <div>
+                        <h4>10,000+ Success Stories</h4>
+                        <p>Join our successful alumni network</p>
+                    </div>
+                </div>
+                <div class="resource-item">
+                    <i class="fas fa-gift"></i>
+                    <div>
+                        <h4>100% Free Study Materials</h4>
+                        <p>Comprehensive resources at no cost</p>
+                    </div>
+                </div>
+                <div class="resource-item">
+                    <i class="fas fa-headset"></i>
+                    <div>
+                        <h4>24/7 Free Mentorship</h4>
+                        <p>Round-the-clock expert guidance</p>
+                    </div>
+                </div>
+                <div class="resource-item">
+                    <i class="fas fa-calendar-week"></i>
+                    <div>
+                        <h4>Weekly Resource Updates</h4>
+                        <p>New materials added every week</p>
+                    </div>
+                </div>
+                <div class="resource-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>Coming Soon</h4>
+                        <p>More exclusive resources on the way!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="groups-notice" style="margin-top: 24px;">
+                <i class="fas fa-whatsapp"></i>
+                <p><strong>Pro Tip:</strong> Join our WhatsApp groups to receive free resources directly! Updated weekly with fresh content.</p>
+            </div>
+        </div>
+    </div>
 
-
-        let currentQuoteIndex = 0;
-
-        function getNewQuote() {
-            let newIndex;
-            do {
-                newIndex = Math.floor(Math.random() * quotes.length);
-            } while (newIndex === currentQuoteIndex && quotes.length > 1);
-            
-            currentQuoteIndex = newIndex;
-            const quoteElement = document.getElementById('motivationalQuote');
-            quoteElement.style.opacity = '0';
-            
-            setTimeout(() => {
-                quoteElement.textContent = quotes[currentQuoteIndex];
-                quoteElement.style.opacity = '1';
-            }, 300);
-        }
-
-        // Display initial quote
-        window.addEventListener('load', function() {
-            getNewQuote();
-            // Change quote automatically every 10 seconds
-            setInterval(getNewQuote, 10000);
-        });
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener("click", function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute("href"));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: "smooth",
-                        block: "start"
-                    });
-                }
-            });
-        });
-
-        // Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: "0px 0px -50px 0px"
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("animate-in");
-                }
-            });
-        }, observerOptions);
-
-        // Observe all cards and sections
-        document.querySelectorAll(".feature-card, .social-card, .group-card, .section-header").forEach(el => {
-            observer.observe(el);
-        });
-
-        // Add loading animation to images
-        document.querySelectorAll("img").forEach(img => {
-            img.addEventListener("load", function() {
-                this.classList.add("loaded");
-            });
-        });
-
-        // Sticky header scroll effect
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('.sticky-header');
-            if (window.scrollY > 100) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-    </script>
-  </body>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
 </html>

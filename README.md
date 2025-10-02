@@ -32,19 +32,29 @@ CSSPMS.GRAMMAR Linktree is a modern, responsive web platform designed specifical
 
 ## ✨ Features
 
+### 🆕 Latest Updates (October 2024)
+- 🌓 **Dark/Light Mode Toggle** - Persistent theme switcher with smooth transitions
+- 🖼️ **Real Background Images** - Unsplash photos of students studying with blur effect
+- ✓ **Blue Verification Badge** - Professional checkmark next to academy name
+- 📚 **Weekly Resource Updates** - "Coming Soon" section with update schedule
+- 📱 **Enhanced Mobile UX** - Optimized for all screen sizes
+
 ### Design Elements
-- 🎨 Animated parallax star background
-- 💫 Smooth transitions and hover effects
-- 📱 Fully responsive layout
-- 🎯 Custom Google Font integration (Karla)
-- 🖼️ Dynamic GitHub profile picture integration
+- 🎨 Blurred background with real student study images (Unsplash)
+- 💫 Smooth glassmorphism effects with backdrop blur
+- 📱 Mobile-first responsive design
+- 🎯 Google Fonts (Inter & Poppins)
+- 🌙 Theme persistence with localStorage
+- ✨ Animated hover states and transitions
+- 🎪 Swipeable quote carousel with Swiper.js
 
 ### Core Components
-- 👤 Profile section with username display
-- 💭 Dynamic quote display with animations
-- 🔗 Social media integration
-- 📱 WhatsApp channel integration
-- 📝 Comprehensive resource listings
+- 👤 Profile section with academy logo & verification badge
+- 💭 53 rotating motivational quotes
+- 🔗 Interactive social media icons
+- 📱 WhatsApp groups and channel links
+- 📝 Modal-based navigation system
+- 🎨 Ripple effects on button clicks
 
 ## 🚀 Getting Started
 
@@ -70,7 +80,10 @@ CSSPMS.GRAMMAR Linktree is a modern, responsive web platform designed specifical
 ```
 ├── index.html          # Main HTML structure
 ├── style.css          # Styling and animations
-├── Images/           # Social media icons
+├── script.js          # Interactive features & physics
+├── Images/           # Media assets
+│   ├── AcademyLogo.PNG
+│   ├── verified-badge.png
 │   ├── Facebook.png
 │   ├── Instagram.jpg
 │   ├── Instagram Broadcast.jpg
@@ -82,8 +95,9 @@ CSSPMS.GRAMMAR Linktree is a modern, responsive web platform designed specifical
 ## 🔧 Technical Details
 
 ### Dependencies
-- Font Awesome 5.8.1 (CDN)
-- Google Fonts - Karla (CDN)
+- Font Awesome 6.4.0 (CDN)
+- Google Fonts - Inter & Poppins (CDN)
+- Swiper.js 11 (CDN) - Touch carousel
 - No local dependencies or build process required
 
 ### Browser Support
@@ -96,22 +110,24 @@ CSSPMS.GRAMMAR Linktree is a modern, responsive web platform designed specifical
 - Modify `index.html` for content updates
 - Add/remove social links as needed
 
-## 🔮 Future Enhancements
+## 🔮 Implemented Features
 
-1. **Performance Optimizations**
-   - Image optimization
-   - Lazy loading implementation
-   - Caching strategies
+1. **Performance Optimizations** ✅
+   - Image optimization with CDN
+   - Lazy loading implemented
+   - Background image preloading
 
-2. **Feature Additions**
-   - Dark/light theme toggle
-   - User preferences storage
-   - Newsletter integration
+2. **Feature Additions** ✅
+   - Dark/light theme toggle ✅
+   - User preferences storage (localStorage) ✅
+   - Google Gravity physics for social icons ✅
+   - Swipeable quote carousel ✅
 
-3. **Content Improvements**
-   - Blog section
-   - Resource categorization
-   - Search functionality
+3. **Interactive Features** ✅
+   - Draggable & throwable social icons
+   - Physics-based bounce system
+   - Modal navigation
+   - Ripple effects on clicks
 
 ## 📝 License
 
