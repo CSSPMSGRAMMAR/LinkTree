@@ -307,13 +307,13 @@ function initializePlayfulIcons() {
     
     const icons = [];
     
-    // Social media icons data + Mystery button
+    // Social media icons data + Mystery button (Mystery in MIDDLE position)
     const socialIconsData = [
         { class: 'whatsapp', icon: 'fab fa-whatsapp', link: 'https://whatsapp.com/channel/0029Va81q0TLtOj8Und0ua0l', title: 'WhatsApp' },
         { class: 'facebook', icon: 'fab fa-facebook-f', link: 'https://www.facebook.com/csspmsgrammar', title: 'Facebook' },
+        { class: 'mystery', icon: 'fas fa-question', link: '#', title: 'Social Icons Guide', isMystery: true },
         { class: 'instagram', icon: 'fab fa-instagram', link: 'https://www.instagram.com/csspms.grammar', title: 'Instagram' },
-        { class: 'broadcast', icon: 'fas fa-broadcast-tower', link: 'https://www.instagram.com/channel/AbbiG2WKNSpJDJuy/', title: 'Broadcast' },
-        { class: 'mystery', icon: 'fas fa-question', link: '#', title: 'Mystery Help', isMystery: true }
+        { class: 'broadcast', icon: 'fas fa-broadcast-tower', link: 'https://www.instagram.com/channel/AbbiG2WKNSpJDJuy/', title: 'Broadcast' }
     ];
     
     // Create icons in physics playground
